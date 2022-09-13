@@ -1,0 +1,17 @@
+Well done!
+
+3.
+a)
+You did a small mistake - you needed to filter by pm.name. I think, it's more like typo, so I'll take it as a correct answer. :)
+
+c) -1
+You got incorrect result because of WHERE clause.
+Why do you need it? There is nothing about it in the task.
+Also, join is always more preferable than subquery.
+Correct answer:
+SELECT p.Name, COUNT(sp.SpecialOfferID) as cnt
+FROM Production.Product p JOIN sales.SpecialOfferProduct sp ON p.ProductID=sp.ProductID
+GROUP BY p.Name
+HAVING COUNT(sp.SpecialOfferID) >1
+
+Mark: 9
