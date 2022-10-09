@@ -1,0 +1,18 @@
+Well done!
+
+-1
+Too much functionsc and subqueries, you're making it's harder out of nothing.
+Correct answer:
+SELECT year, [1],[2], [12]
+FROM
+(SELECT MONTH(DueDate) as month,OrderQty, Year(DueDate) as year
+FROM Production.WorkOrder
+) t1
+PIVOT
+(SUM(OrderQty)
+FOR month IN ([12],[1],[2])
+) t2
+ORDER BY 1
+
+Mark: 9
+Test mark: 7
