@@ -1,0 +1,4 @@
+Task 2:
+The AdventureWorksDW 2017 is created like "Star"(with dim and fact). 
+The Adventure Works 2017 is created like "Snowflake". 
+The schema "Star" is easy for reporting and analysis.(We don't need to join a lot of table).
