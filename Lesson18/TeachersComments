@@ -1,0 +1,37 @@
+Well done!
+
+1
+-0.5
+Why do we need a subquery?
+Correct answer:
+SELECT man.first_name, man.cast_name, COUNT(emp.employee_id) as cnt_of_emp
+FROM employees man, employees emp ON man.employee_id=emp.manager_id
+GROUP BY man.first_name, man.cast_name
+HAVING COUNT(emp.employee_id)>6
+
+2
+-0.5
+Once again, totally correct answer except the subquery!
+
+3
+-1
+Is it a joke? :|
+Once again, subquery. And here not 1, but even two.
+Correct answer:
+SELECT TOP 1 WITH TIES region_name
+FROM Employees e JOIN Departments d ON dep.department_id=emp.department_id
+	JOIN Locations l ON d.location_id=l.location_id
+	JOIN Countries c ON l.country_id=c.country_id
+	JOIN Regions r ON c.region_id=r.region_id 
+GROUP BY region_name
+ORDER BY COUNT(employee_id) DESC
+
+4
+-0.5
+S U B Q U E R Y
+
+6
+Only there subquery is needed.
+I guess, now we have a problem with addding everywhere not window functions, but subqueries :)
+
+Mark: 8
