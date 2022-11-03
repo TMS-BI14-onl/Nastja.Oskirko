@@ -1,0 +1,63 @@
+https://docs.google.com/document/d/1DSoblMxE_Srf7B-Gno2DZCHDadl5Isox/edit?usp=share_link&ouid=110014308258248244885&rtpof=true&sd=true
+
+
+
+
+Проверочная работа 7
+ 
+1)Вариант №2:
+
+
+
+
+SELECT *
+FROM Table_1
+ORDER BY col_1 ASC, col_2 DESC
+
+2)Вывод всего из таблицы  Employees
+3)1   1
+2     2
+NULL  NULL
+NULL  NULL
+
+4)1      1
+2        2 
+4        NULL
+NULL      NULL
+NULL     NULL
+
+5)120
+
+6)Один ко многим
+
+7)Таблицы никак не связаны
+
+8)
+ Ни одна нормальная форма не соблюдена
+
+9)не уверена по поводу пробела,даю два ответа:
+если в таблице есть пробел после всех Value:
+AAA
+CBA
+
+если в таблице нет пробела после Value:
+AAA 
+1AB
+
+
+10)id		  name
+			  
+   
+вывод - пустая таблица
+
+11)
+SELECT SUM(X)
+FROM TABLE_1
+WHERE ABS(X)=X OR X/5=1
+
+
+
+
+
+
+
